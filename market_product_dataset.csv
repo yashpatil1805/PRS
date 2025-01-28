@@ -1,0 +1,101 @@
+productId,title,category,price,description
+1,Vacuum Cleaner 60,Home Essentials,130.68,This is a high-quality vacuum cleaner in the home essentials category.
+2,Jeans 15,Apparel,697.72,This is a high-quality jeans in the apparel category.
+3,Cap 67,Apparel,958.38,This is a high-quality cap in the apparel category.
+4,Coffee Maker 11,Home Essentials,200.85,This is a high-quality coffee maker in the home essentials category.
+5,Blender 48,Home Essentials,594.97,This is a high-quality blender in the home essentials category.
+6,Jacket 1,Apparel,823.87,This is a high-quality jacket in the apparel category.
+7,Biography 82,Books,372.01,This is a high-quality biography in the books category.
+8,Tablet 14,Electronics,398.82,This is a high-quality tablet in the electronics category.
+9,Cookbook 5,Books,770.01,This is a high-quality cookbook in the books category.
+10,Cookbook 21,Books,198.83,This is a high-quality cookbook in the books category.
+11,T-shirt 20,Apparel,874.85,This is a high-quality t-shirt in the apparel category.
+12,Sneakers 32,Apparel,727.43,This is a high-quality sneakers in the apparel category.
+13,Fiction Novel 2,Books,613.81,This is a high-quality fiction novel in the books category.
+14,Smartphone 31,Electronics,752.46,This is a high-quality smartphone in the electronics category.
+15,Cookbook 41,Books,712.3,This is a high-quality cookbook in the books category.
+16,Fiction Novel 22,Books,763.56,This is a high-quality fiction novel in the books category.
+17,Headphones 31,Electronics,422.48,This is a high-quality headphones in the electronics category.
+18,Air Purifier 5,Home Essentials,554.83,This is a high-quality air purifier in the home essentials category.
+19,Biography 12,Books,71.61,This is a high-quality biography in the books category.
+20,Biography 25,Books,669.43,This is a high-quality biography in the books category.
+21,Tablet 40,Electronics,61.75,This is a high-quality tablet in the electronics category.
+22,Smartwatch 24,Electronics,817.61,This is a high-quality smartwatch in the electronics category.
+23,Travel Guide 18,Books,818.36,This is a high-quality travel guide in the books category.
+24,Biography 47,Books,452.71,This is a high-quality biography in the books category.
+25,Science Textbook 25,Books,665.63,This is a high-quality science textbook in the books category.
+26,Headphones 43,Electronics,743.67,This is a high-quality headphones in the electronics category.
+27,Laptop 99,Electronics,352.67,This is a high-quality laptop in the electronics category.
+28,Fiction Novel 50,Books,927.15,This is a high-quality fiction novel in the books category.
+29,Laptop 67,Electronics,787.42,This is a high-quality laptop in the electronics category.
+30,Vacuum Cleaner 3,Home Essentials,569.35,This is a high-quality vacuum cleaner in the home essentials category.
+31,Cookbook 60,Books,666.85,This is a high-quality cookbook in the books category.
+32,Biography 79,Books,667.68,This is a high-quality biography in the books category.
+33,Smartwatch 16,Electronics,329.09,This is a high-quality smartwatch in the electronics category.
+34,Laptop 69,Electronics,963.79,This is a high-quality laptop in the electronics category.
+35,Laptop 30,Electronics,160.4,This is a high-quality laptop in the electronics category.
+36,T-shirt 92,Apparel,385.28,This is a high-quality t-shirt in the apparel category.
+37,Cap 71,Apparel,520.73,This is a high-quality cap in the apparel category.
+38,Vacuum Cleaner 3,Home Essentials,416.51,This is a high-quality vacuum cleaner in the home essentials category.
+39,Headphones 6,Electronics,241.57,This is a high-quality headphones in the electronics category.
+40,Vacuum Cleaner 29,Home Essentials,851.11,This is a high-quality vacuum cleaner in the home essentials category.
+41,Coffee Maker 40,Home Essentials,883.74,This is a high-quality coffee maker in the home essentials category.
+42,Vacuum Cleaner 43,Home Essentials,103.17,This is a high-quality vacuum cleaner in the home essentials category.
+43,Coffee Maker 4,Home Essentials,637.44,This is a high-quality coffee maker in the home essentials category.
+44,Vacuum Cleaner 32,Home Essentials,673.65,This is a high-quality vacuum cleaner in the home essentials category.
+45,Smartwatch 73,Electronics,152.05,This is a high-quality smartwatch in the electronics category.
+46,Vacuum Cleaner 91,Home Essentials,249.19,This is a high-quality vacuum cleaner in the home essentials category.
+47,Jeans 83,Apparel,328.48,This is a high-quality jeans in the apparel category.
+48,Science Textbook 88,Books,237.18,This is a high-quality science textbook in the books category.
+49,Smartwatch 41,Electronics,806.49,This is a high-quality smartwatch in the electronics category.
+50,Fiction Novel 36,Books,833.0,This is a high-quality fiction novel in the books category.
+51,Travel Guide 92,Books,634.05,This is a high-quality travel guide in the books category.
+52,Smartphone 10,Electronics,787.67,This is a high-quality smartphone in the electronics category.
+53,Headphones 58,Electronics,949.51,This is a high-quality headphones in the electronics category.
+54,Biography 70,Books,369.34,This is a high-quality biography in the books category.
+55,Sneakers 93,Apparel,725.85,This is a high-quality sneakers in the apparel category.
+56,Biography 23,Books,495.63,This is a high-quality biography in the books category.
+57,Smartwatch 75,Electronics,53.72,This is a high-quality smartwatch in the electronics category.
+58,Jacket 64,Apparel,348.07,This is a high-quality jacket in the apparel category.
+59,Headphones 14,Electronics,254.33,This is a high-quality headphones in the electronics category.
+60,Sneakers 75,Apparel,981.67,This is a high-quality sneakers in the apparel category.
+61,Tablet 8,Electronics,945.56,This is a high-quality tablet in the electronics category.
+62,Science Textbook 5,Books,178.84,This is a high-quality science textbook in the books category.
+63,Microwave 42,Home Essentials,642.15,This is a high-quality microwave in the home essentials category.
+64,Coffee Maker 41,Home Essentials,846.07,This is a high-quality coffee maker in the home essentials category.
+65,Jeans 13,Apparel,453.57,This is a high-quality jeans in the apparel category.
+66,Microwave 84,Home Essentials,850.84,This is a high-quality microwave in the home essentials category.
+67,Cookbook 87,Books,853.64,This is a high-quality cookbook in the books category.
+68,Jeans 15,Apparel,800.47,This is a high-quality jeans in the apparel category.
+69,Tablet 65,Electronics,175.09,This is a high-quality tablet in the electronics category.
+70,Headphones 53,Electronics,432.23,This is a high-quality headphones in the electronics category.
+71,Laptop 46,Electronics,591.92,This is a high-quality laptop in the electronics category.
+72,T-shirt 53,Apparel,590.3,This is a high-quality t-shirt in the apparel category.
+73,Headphones 47,Electronics,890.49,This is a high-quality headphones in the electronics category.
+74,Coffee Maker 39,Home Essentials,756.76,This is a high-quality coffee maker in the home essentials category.
+75,Microwave 83,Home Essentials,649.25,This is a high-quality microwave in the home essentials category.
+76,Jeans 98,Apparel,495.74,This is a high-quality jeans in the apparel category.
+77,Jacket 51,Apparel,131.45,This is a high-quality jacket in the apparel category.
+78,Cap 46,Apparel,310.13,This is a high-quality cap in the apparel category.
+79,Cap 17,Apparel,106.98,This is a high-quality cap in the apparel category.
+80,Air Purifier 13,Home Essentials,698.63,This is a high-quality air purifier in the home essentials category.
+81,Microwave 24,Home Essentials,999.94,This is a high-quality microwave in the home essentials category.
+82,T-shirt 39,Apparel,812.21,This is a high-quality t-shirt in the apparel category.
+83,Air Purifier 15,Home Essentials,856.5,This is a high-quality air purifier in the home essentials category.
+84,Biography 98,Books,480.07,This is a high-quality biography in the books category.
+85,Headphones 8,Electronics,205.73,This is a high-quality headphones in the electronics category.
+86,Smartphone 58,Electronics,101.96,This is a high-quality smartphone in the electronics category.
+87,Travel Guide 50,Books,751.25,This is a high-quality travel guide in the books category.
+88,Cap 42,Apparel,506.8,This is a high-quality cap in the apparel category.
+89,Sneakers 31,Apparel,381.24,This is a high-quality sneakers in the apparel category.
+90,Sneakers 80,Apparel,963.61,This is a high-quality sneakers in the apparel category.
+91,Headphones 48,Electronics,945.2,This is a high-quality headphones in the electronics category.
+92,Cookbook 58,Books,307.52,This is a high-quality cookbook in the books category.
+93,Jacket 65,Apparel,112.29,This is a high-quality jacket in the apparel category.
+94,Fiction Novel 31,Books,766.74,This is a high-quality fiction novel in the books category.
+95,Fiction Novel 13,Books,486.32,This is a high-quality fiction novel in the books category.
+96,Smartwatch 46,Electronics,418.37,This is a high-quality smartwatch in the electronics category.
+97,Smartwatch 20,Electronics,832.81,This is a high-quality smartwatch in the electronics category.
+98,Biography 84,Books,119.05,This is a high-quality biography in the books category.
+99,Smartwatch 100,Electronics,322.78,This is a high-quality smartwatch in the electronics category.
+100,Biography 76,Books,255.49,This is a high-quality biography in the books category.

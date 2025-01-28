@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Recommendations</title></head>
+<body>
+    <h1>Recommended Products</h1>
+    <ul>
+    {% for recommendation in products %}
+        <li>{{ recommendation.title }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendations</title>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Navbar Styles */
+        nav.navbar {
+            display:flex;
+            background-color: #1f1f1f;
+            padding: 15px 0;
+        }
+
+        nav.navbar .navbar-brand {
+            text-decoration:none;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #ffffff;
+            padding-left: 20px;
+        }
+
+        nav.navbar .navbar-nav .nav-link {
+            margin-left:1200px;
+            font-size: 1.1rem;
+            color: #ffffff;
+            padding: 10px 20px;
+            transition: color 0.3s;
+        }
+
+        nav.navbar .navbar-nav .nav-link:hover {
+            color: #4CAF50;
+        }
+
+        /* Search Bar Styles */
+        .search-bar {
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .search-bar input[type="search"] {
+            width: 60%;
+            padding: 14px;
+            font-size: 1.2rem;
+            border-radius: 25px;
+            border: 1px solid #333;
+            margin-bottom: 10px;
+        }
+
+        .search-bar button {
+            padding: 14px 30px;
+            border-radius: 25px;
+            border: 1px solid #333;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            font-size: 1.1rem;
+            margin-left: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .search-bar button:hover {
+            background-color: #45a049;
+        }
+
+        /* Product Cards and Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+            padding: 0 20px;
+        }
+
+        .product-card {
+            background-color: #1e1e1e;
+            border-radius: 15px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            padding: 15px;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product-card .card-body {
+            padding: 20px;
+        }
+
+        .product-card .card-body h5 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+        }
+
+        .product-card .card-body p {
+            font-size: 1rem;
+            color: #aaaaaa;
+            margin-bottom: 15px;
+        }
+
+        .product-card .card-body .price {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        .product-card .card-body a {
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            text-align: center;
+            display: inline-block;
+            width: 80%;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card .card-body a:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #1f1f1f;
+            color: #aaaaaa;
+            padding: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="/">Product Recommendations</a>
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/logout">Logout</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Search Bar -->
+<div class="search-bar">
+    <form method="GET" action="/search" class="form-inline">
+        <input class="form-control mr-2" type="search" name="search_query" placeholder="Search for products..." aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+</div>
+
+<!-- Search Results -->
+<div class="container mt-4">
+    {% if search_results is not none and search_results|length > 0 %}
+        <h2 class="text-center text-white">Search Results</h2>
+        <div class="product-grid">
+            {% for product in search_results %}
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="product image">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.title }}</h5>
+                        <p class="card-text">{{ product.description[:100] }}...</p>
+                        <p class="price">$ {{ product.price }}</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        {% if search_results is not none %}
+            <p class="text-white text-center">No search results found for your query.</p>
+        {% endif %}
+    {% endif %}
+</div>
+
+<!-- Product Recommendations -->
+<div class="container mt-4">
+    <h2 class="text-center text-white">Recommended Products</h2>
+    <div class="product-grid">
+        {% if products is not none and products|length > 0 %}
+            {% for product in products %}
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="{{ product }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product }}</h5>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p class="text-white text-center">No products found.</p>
+        {% endif %}
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Product Recommendations. All Rights Reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
